@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ferry</title>
-    <link rel="canonical" href="ferry/index.html" />
+    <title>marina</title>
+    <link rel="canonical" href="marina/index.html" />
     <link
       rel="icon"
       type="image/png"
@@ -41,11 +41,11 @@
       property="og:description"
       content="Online property management platform"
     />
-    <meta property="og:url" content="https://ferry.com" />
+    <meta property="og:url" content="https://marina.com" />
     <meta property="og:image" content="/assets/images/og-image.png" />
-    <meta property="og:title" content="ferry - Landing Page" />
+    <meta property="og:title" content="marina - Landing Page" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="ferry" />
+    <meta property="og:site_name" content="marina" />
     <meta name="robots" content="index,follow" />
     <meta
       property="article:modified_time"
@@ -116,7 +116,7 @@
                     class="show"
                     style="
                       position: absolute;
-                      top: 20px;
+                      top: 12px;
                       right: 20px;
                       left: auto;
                       text-align: center;
@@ -132,19 +132,19 @@
                 <div id="mobileMenu" class="mobile-nav">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a href="#" class="nav-link active"> Home </a>
+                      <a href="./index.html" class="nav-link active"> Home </a>
                     </li>
                     <li class="nav-item">
-                      <a href="" class="nav-link"> About Us </a>
+                      <a href="./about.html" class="nav-link"> About Us </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link"> Services </a>
+                      <a href="./services.html" class="nav-link"> Services </a>
                     </li>
                     <li class="nav-item">
                       <a href="#" class="nav-link"> Testimonials </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">Contact</a>
+                      <a href="./services.html" class="nav-link">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -154,19 +154,24 @@
                 >
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a href="#" class="nav-link active"> Home </a>
+                      <a href="./index.html" class="nav-link active"> Home </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link"> About Us </a>
+                      <a href="./about.html" class="nav-link"> About Us </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link"> Services </a>
+                      <a href="./services.html" class="nav-link"> Services </a>
                     </li>
                     <li class="nav-item">
                       <a href="#" class="nav-link"> Testimonials </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">Contact</a>
+                      <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link search-box">
+                        <i class="bx bx-search"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -175,59 +180,166 @@
           </div>
         </div>
       </div>
-      <div class="header-background">
-        <div
-          style="
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            height: 100vh;
-          "
-        >
-          <img
-            src="./assets/images/banner-1.jpg"
-            alt="Header Image"
-            class="img-responsive"
-          />
-          <div class="bg-overlay"></div>
-          <div class="main-wrap">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 main-content">
-                  <h1>Transport & Logistics Services</h1>
-                  <div class="mt-2">
-                    <a href="contact.html" class="site-btn-one mr-3"
-                      >Contact Us</a
+      <div class="search-area search-in">
+        <div class="search-input">
+          <input type="text" placeholder="search..." />
+          <button type="submit">
+            <i class="bx bx-search"></i>
+          </button>
+          <span id="searchClose" class="search-close bx bx-x"></span>
+        </div>
+      </div>
+      <div class="hero-slider owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="hero-slider-item slider-image-one">
+          <div class="header-background">
+            <div>
+              <div class="bg-overlay"></div>
+              <div class="main-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-12 col-xs-12 main-content"
                     >
-                    <a href="#" class="site-btn-two">Get A Quote</a>
+                      <h1>Transport & Logistics Services</h1>
+                      <div class="mt-2">
+                        <a href="contact.html" class="site-btn-one mr-3"
+                          >Contact Us</a
+                        >
+                        <a href="#" class="site-btn-two">Get A Quote</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="track-form">
+                        <h2>Track Your Order</h2>
+                        <form>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Tracking ID No."
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Enter Email"
+                            />
+                          </div>
+
+                          <div class="text-center">
+                            <button type="submit" class="site-btn-one">
+                              Track Now
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div class="track-form">
-                    <h2>Track Your Order</h2>
-                    <form>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Tracking ID No."
-                        />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider-item slider-image-two">
+          <div class="header-background">
+            <div>
+              <div class="bg-overlay"></div>
+              <div class="main-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-12 col-xs-12 main-content"
+                    >
+                      <h1>Transport & Logistics Services</h1>
+                      <div class="mt-2">
+                        <a href="contact.html" class="site-btn-one mr-3"
+                          >Contact Us</a
+                        >
+                        <a href="#" class="site-btn-two">Get A Quote</a>
                       </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="track-form">
+                        <h2>Track Your Order</h2>
+                        <form>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Tracking ID No."
+                            />
+                          </div>
 
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Enter Email"
-                        />
-                      </div>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Enter Email"
+                            />
+                          </div>
 
-                      <div class="text-center">
-                        <button type="submit" class="site-btn-one">
-                          Track Now
-                        </button>
+                          <div class="text-center">
+                            <button type="submit" class="site-btn-one">
+                              Track Now
+                            </button>
+                          </div>
+                        </form>
                       </div>
-                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider-item slider-image-three">
+          <div class="header-background">
+            <div>
+              <div class="bg-overlay"></div>
+              <div class="main-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-12 col-xs-12 main-content"
+                    >
+                      <h1>Transport & Logistics Services</h1>
+                      <div class="mt-2">
+                        <a href="contact.html" class="site-btn-one mr-3"
+                          >Contact Us</a
+                        >
+                        <a href="#" class="site-btn-two">Get A Quote</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="track-form">
+                        <h2>Track Your Order</h2>
+                        <form>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Tracking ID No."
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Enter Email"
+                            />
+                          </div>
+
+                          <div class="text-center">
+                            <button type="submit" class="site-btn-one">
+                              Track Now
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -271,35 +383,6 @@
                 class="img-fluid"
               />
             </figure>
-          </div>
-        </div>
-        <div class="section-title">
-          <span>Our Statistics</span>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-3">
-            <div class="stats-container">
-              <h4>2,0000</h4>
-              <p>Delivered packages</p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="stats-container">
-              <h4>6,492</h4>
-              <p>Distance covered</p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="stats-container">
-              <h4>4,243</h4>
-              <p>Solutions</p>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="stats-container">
-              <h4>572</h4>
-              <p>Satisfied clients</p>
-            </div>
           </div>
         </div>
       </div>
@@ -630,8 +713,79 @@
       </div>
     </div>
     <!-- end transportation area -->
-    <!--  footer area -->
+    <!--  news area -->
+    <div class="news-area">
+      <div class="container">
+        <div class="section-title">
+          <span>Our News</span>
+          <h2>Read Our Latest News</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <a class="news-image" href="#">
+                <img src="./assets/images/news/news-1.jpg" alt="image" />
+              </a>
+              <div class="news-text">
+                <span class="meta-tag">Health</span>
+                <div class="date">22 August 2020</div>
+                <h3>
+                  <a href="#"> We ensure you best the quality services </a>
+                </h3>
+                <p class="mb-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tempor
+                </p>
 
+                <a href="#" class="site-btn-two">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <a class="news-image" href="#">
+                <img src="./assets/images/news/new-2.jfif" alt="image" />
+              </a>
+              <div class="news-text">
+                <span class="meta-tag">Health</span>
+                <div class="date">22 August 2020</div>
+                <h3>
+                  <a href="#"> We ensure you best the quality services </a>
+                </h3>
+                <p class="mb-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tempor
+                </p>
+
+                <a href="#" class="site-btn-two">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <a class="news-image" href="#">
+                <img src="./assets/images/news/news-1.jpg" alt="image" />
+              </a>
+              <div class="news-text">
+                <span class="meta-tag">Health</span>
+                <div class="date">22 August 2020</div>
+                <h3>
+                  <a href="#"> We ensure you best the quality services </a>
+                </h3>
+                <p class="mb-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tempor
+                </p>
+
+                <a href="#" class="site-btn-two">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  end news area -->
+    <!--   footer area -->
     <footer class="footer-area">
       <div class="container">
         <div class="row">
@@ -682,9 +836,6 @@
                   <a href="services.html">Services</a>
                 </li>
                 <li>
-                  <a href="#">Features</a>
-                </li>
-                <li>
                   <a href="#">Cost calculator</a>
                 </li>
                 <li>
@@ -708,9 +859,7 @@
                 <li>
                   <a href="terms-condition.html">Terms &amp; Conditions</a>
                 </li>
-                <li>
-                  <a href="#">Community</a>
-                </li>
+
                 <li>
                   <a href="contact.html">Contact Us</a>
                 </li>
@@ -728,11 +877,7 @@
                 </li>
                 <li>
                   <i class="bx bxs-envelope"></i>
-                  <a href="mailto:hello@ferry.com">hello@ferry.com</a>
-                </li>
-                <li>
-                  <i class="bx bxs-envelope"></i>
-                  <a href="mailto:contact@ferry.com">contact@ferry.com</a>
+                  <a href="mailto:contact@marina.com">contact@marina.com</a>
                 </li>
                 <li>
                   <i class="bx bxs-phone"></i>
@@ -746,10 +891,22 @@
     </footer>
     <div class="footer-bottom">
       <div class="container">
-        <p>Copyright @2020 ferry. All Rights Reserved</p>
+        <p>
+          Copyright @
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          marina. All Rights Reserved
+        </p>
       </div>
     </div>
     <!-- end footer area -->
+
+    <!-- Go Top -->
+    <div class="go-top">
+      <i class="bx bx-chevrons-up"></i>
+    </div>
+    <!-- End Go Top -->
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <!-- Bootstrap  -->
     <script src="./assets/js/popper.min.js"></script>
@@ -761,6 +918,3 @@
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
-<!-- <div class="navbar-area">
-        
-    </div> -->

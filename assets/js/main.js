@@ -36,6 +36,38 @@ $(".partner-slider").owlCarousel({
     },
   },
 });
+// Hero slider
+$(".hero-slider").owlCarousel({
+  items: 1,
+  loop: true,
+  margin: 0,
+  nav: true,
+  autoHeight: true,
+  autoplay: true,
+  autoplayHoverPause: true,
+  dots: false,
+  navText: [
+    "<i class='bx bx-chevron-left'></i>",
+    "<i class='bx bx-chevron-right'></i>",
+  ],
+});
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 120) {
+    $(".site-nav").addClass("menu-shrink");
+  } else {
+    $(".site-nav").removeClass("menu-shrink");
+  }
+});
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 0) {
+    $(".go-top").addClass("active");
+  } else {
+    $(".go-top").removeClass("active");
+  }
+});
+$(".go-top").on("click", function () {
+  $("html, body").animate({ scrollTop: "0" }, 500);
+});
 
 let btnTrigger = document.getElementById("mobile-toggle");
 let mobileMenu = document.getElementById("mobileMenu");
