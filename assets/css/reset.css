@@ -96,8 +96,9 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 0;
   list-style: none;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 ol ol,
@@ -105,7 +106,7 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 dt {
@@ -483,6 +484,12 @@ mark,
 }
 .blockquote-footer::before {
   content: "\2014 \00A0";
+}
+.no-white-space {
+  white-space: nowrap !important;
+}
+.white-space {
+  white-space: normal !important;
 }
 
 .img-fluid {

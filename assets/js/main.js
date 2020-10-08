@@ -69,9 +69,73 @@ $(".go-top").on("click", function () {
   $("html, body").animate({ scrollTop: "0" }, 500);
 });
 
+// Accordion JS
+$(".accordion > li:eq(0) .title").addClass("active").next().slideDown();
+$(".accordion .title").click(function (j) {
+  var dropDown = $(this).closest("li").find(".accordion-content");
+  $(this)
+    .closest(".accordion")
+    .find(".accordion-content")
+    .not(dropDown)
+    .slideUp();
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    $(this).closest(".accordion").find(".title.active").removeClass("active");
+    $(this).addClass("active");
+  }
+  dropDown.stop(false, true).slideToggle();
+  j.preventDefault();
+});
+
+// Data table
+$("#data-table").DataTable();
+
+/*----------------------------
+    wow js active
+   ------------------------------ */
+new WOW().init();
+
 let btnTrigger = document.getElementById("mobile-toggle");
 let mobileMenu = document.getElementById("mobileMenu");
 
 btnTrigger.addEventListener("click", function () {
   mobileMenu.classList.toggle("mobile-show");
 });
+
+let step = "step1";
+
+const step1 = document.getElementById("step1");
+const step2 = document.getElementById("step2");
+const step3 = document.getElementById("step3");
+const step4 = document.getElementById("step4");
+
+function next() {
+  if (step === "step1") {
+    step = "step2";
+    step1.classList.remove("is-active");
+    step1.classList.add("is-complete");
+    step2.classList.add("is-active");
+  } else if (step === "step2") {
+    step = "step3";
+    step2.classList.remove("is-active");
+    step2.classList.add("is-complete");
+    step3.classList.add("is-active");
+  } else if (step === "step3") {
+    step = "step4d";
+    step3.classList.remove("is-active");
+    step3.classList.add("is-complete");
+    step4.classList.add("is-active");
+  } else if (step === "step4d") {
+    step = "complete";
+    step4.classList.remove("is-active");
+    step4.classList.add("is-complete");
+  } else if (step === "complete") {
+    step = "step1";
+    step4.classList.remove("is-complete");
+    step3.classList.remove("is-complete");
+    step2.classList.remove("is-complete");
+    step1.classList.remove("is-complete");
+    step1.classList.add("is-active");
+  }
+}

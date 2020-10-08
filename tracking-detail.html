@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>marina</title>
+    <link rel="canonical" href="marina/index.html" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/assets/images/48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="/assets/images/64x64.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- OG & SEO -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Online property management platform"
+    />
+    <meta property="og:url" content="https://marina.com" />
+    <meta property="og:image" content="/assets/images/og-image.png" />
+    <meta property="og:title" content="marina - Landing Page" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="marina" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      property="article:modified_time"
+      content="2020-07-28T05:12:37+00:00"
+    />
+    <meta property="og:image" content="wp-content/uploads/2019/03/08.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- end of OG & SEO -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+
+    <!-- Main Style -->
+    <link
+      rel="stylesheet"
+      id="main-style"
+      type="text/css"
+      href="./assets/css/main.css"
+    />
+  </head>
+
+  <body>
+    <header class="header-area">
+      <div class="site-navbar">
+        <div class="site-mobile-nav">
+          <div class="container">
+            <div class="site-responsive-menu">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/images/logo/logo.png" alt="logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-nav">
+          <div class="container">
+            <nav class="navbar relative flex flex-between navbar-expand-md">
+              <div class="flex-start">
+                <div class="logo">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./assets/images/logo/logo.png" alt="logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex-end">
+                <div class="mobile-trigger">
+                  <button
+                    id="mobile-toggle"
+                    class="show"
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      right: 20px;
+                      left: auto;
+                      text-align: center;
+                      text-indent: 0px;
+                      font-size: 18px;
+                    "
+                  >
+                    <span
+                      ><span><span></span></span
+                    ></span>
+                  </button>
+                </div>
+                <div id="mobileMenu" class="mobile-nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./about.html" class="nav-link"> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./services.html" class="nav-link"> Services </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link"> Testimonials </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./services.html" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="site-navigation d-lg-block d-none"
+                  style="display: block"
+                >
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./about.html" class="nav-link"> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./services.html" class="nav-link"> Services </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link"> Testimonials </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link search-box">
+                        <i class="bx bx-search"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="search-area search-in">
+        <div class="search-input">
+          <input type="text" placeholder="search..." />
+          <button type="submit">
+            <i class="bx bx-search"></i>
+          </button>
+          <span id="searchClose" class="search-close bx bx-x"></span>
+        </div>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <!-- page banner -->
+      <div class="page-banner bg-1">
+        <div class="d-table">
+          <div class="d-table-cell">
+            <div class="container">
+              <div class="page-content">
+                <h2>Tracker No</h2>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li>date created</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end page banner -->
+
+      <!-- tracking detail-->
+      <div class="tracker-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <div class="tracker-detail-wrapper">
+                <div class="mb-5 d-flex flex-wrap justify-content-between">
+                  <div class="flex-start">
+                    <h3 class="title-1">Tracking No: 839388393938</h3>
+                  </div>
+                  <div class="flex-end">
+                    <h3 class="title-2">
+                      Status: <span class="color-primary">On Process</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="progress-wrap">
+                  <div class="progress-status">
+                    <span class="border-left"></span>
+                    <span
+                      class="dot dot-left wow fadeIn"
+                      data-wow-offset="50"
+                      data-wow-delay=".40s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.4s;
+                        animation-name: fadeIn;
+                      "
+                    ></span>
+                    <span
+                      class="border-color wow fadeIn"
+                      data-wow-offset="50"
+                      data-wow-delay=".50s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.5s;
+                        animation-name: fadeIn;
+                      "
+                    >
+                      <span class="dot dot-center background-color"></span>
+                    </span>
+                    <span
+                      class="dot dot-right wow fadeIn"
+                      data-wow-offset="50"
+                      data-wow-delay=".60s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.6s;
+                        animation-name: fadeIn;
+                      "
+                    ></span>
+                  </div>
+                  <div class="row progress-content upper-text">
+                    <div class="col-md-3 col-xs-8 col-sm-2">
+                      <p class="fs-12 no-margin">FROM</p>
+                      <h2 class="fs-15 text-uppercase no-margin">London</h2>
+                    </div>
+                    <div class="col-md-2 col-xs-8 col-sm-3">
+                      <p class="fs-12 no-margin"></p>
+                    </div>
+                    <div class="col-md-4 col-xs-8 col-sm-4 text-center">
+                      <p class="fs-12 no-margin">currently in</p>
+                      <h2 class="fs-15 text-uppercase no-margin">singapore</h2>
+                    </div>
+                    <div class="col-md-1 col-xs-8 col-sm-1 no-pad">
+                      <p class="fs-12 no-margin"></p>
+                    </div>
+                    <div class="col-md-2 col-xs-8 col-sm-2 text-right">
+                      <p class="fs-12 no-margin">to</p>
+                      <h2 class="fs-15 text-uppercase no-margin">dhaka</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 stat-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="New Location"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                        <div class="form-group">
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Days (10)"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <select class="form-control" id="FreightType">
+                          <option>Processing</option>
+                          <option>Cancelled</option>
+                          <option>Delivered</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            type="submit"
+                            class="site-btn-one"
+                            value="update"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="mt-3 table-wrap">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th colspan="1">Date</th>
+                          <th colspan="1">Activity</th>
+                          <th colspan="1">Location</th>
+                          <th colspan="2">Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Oct 15, 2020, 6:18 AM</td>
+                          <td>Transit</td>
+                          <td>Ontawa</td>
+                          <td>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Culpa, aspernatur eius eaque dolorem provident
+                            iste.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="track-info text-white">
+                <ul>
+                  <li>
+                    <span class="title-2">Tracking No:</span>
+                    <span class="fs-16">839388393938</span>
+                  </li>
+                  <li>
+                    <span class="title-2">Status</span>
+                    <span class="fs-16 color-primary">On Process</span>
+                  </li>
+                  <li>
+                    <span class="title-2">Ship date:</span>
+                    <span class="fs-16">21st Feb, 2016</span>
+                  </li>
+                  <li>
+                    <span class="title-2">Delivery date:</span>
+                    <span class="fs-16">21st Feb, 2016</span>
+                  </li>
+                  <li>
+                    <span class="title-2">Weight (kg):</span>
+                    <span class="fs-16">0.85 KG</span>
+                  </li>
+                  <li>
+                    <span class="title-2">Freight type:</span>
+                    <span class="fs-16">Ocean cargo</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end tracking detail-->
+    </div>
+    <!--   footer area -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <div class="logo">
+                <img src="./assets/images/logo/logo.png" alt="logo" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <ul class="footer-socials">
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <h3>Company</h3>
+
+              <ul class="footer-text">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <a href="#">Cost calculator</a>
+                </li>
+                <li>
+                  <a href="#">Latest News</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <h3>Support</h3>
+
+              <ul class="footer-text">
+                <li>
+                  <a href="faq.html">FAQ’s</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="terms-condition.html">Terms &amp; Conditions</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <h3>Contact Info</h3>
+              <ul class="info-list">
+                <li>
+                  <i class="bx bxs-location-plus"></i>
+                  6th Floor, Barbosa, Sidney
+                </li>
+                <li>
+                  <i class="bx bxs-envelope"></i>
+                  <a href="mailto:contact@marina.com">contact@marina.com</a>
+                </li>
+                <li>
+                  <i class="bx bxs-phone"></i>
+                  <a href="tel:+0123456789">+0123 456 789</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          Copyright @
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          marina. All Rights Reserved
+        </p>
+      </div>
+    </div>
+    <!-- end footer area -->
+
+    <!-- Go Top -->
+    <div class="go-top">
+      <i class="bx bx-chevrons-up"></i>
+    </div>
+    <!-- End Go Top -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <!-- Bootstrap  -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+
+    <!-- Main JS -->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
